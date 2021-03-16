@@ -3,7 +3,7 @@ title:               Machine Programming
 tagline:             'a living literature review'
 description:         'Research on machine programming.'
 url:                 https://celinelee-intel.github.io/celinelee-intel/
-baseurl:             ''
+baseurl:             https://celinelee-intel.github.io/celinelee-intel/
 
 collections:
   publications:
