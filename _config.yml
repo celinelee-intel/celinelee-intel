@@ -1,9 +1,9 @@
 # Setup
-title:               Machine Learning for Big Code and Naturalness
+title:               Machine Programming
 tagline:             'a living literature review'
-description:         'Research on machine learning for source code.'
+description:         'Research on machine programming.'
 url:                 https://celinelee-intel.github.io
-baseurl:             https://celinelee-intel.github.io/celinelee-intel/
+baseurl:             ''
 
 collections:
   publications:
