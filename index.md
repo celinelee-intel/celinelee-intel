@@ -1,6 +1,6 @@
 ---
 layout: default
-title: A Survey of Machine Learning for Big Code and Naturalness
+title: A Survey of Machine Programming
 ---
 ### Machine Learning on Source Code
 
