@@ -38,13 +38,14 @@ function searchTable() {
 }
 
 
+
 $(document).ready( function () {
     datatable = $('#allPapers').DataTable({
 		paging: false,
 		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
 		columnDefs: [
 			{
-				targets: [5],
+				targets: [4],
 				visible: false,
 				searchable: true
 			}]
