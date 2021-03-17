@@ -2,6 +2,11 @@
 layout: default
 title: A Survey of Machine Programming
 ---
+### Machine Programming
+
+< TODO insert writeup intro for machine programming that replaces the next section. >
+
+
 ### Machine Learning on Source Code
 
 The billions of lines of source code that have been written contain
