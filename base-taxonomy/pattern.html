@@ -16,7 +16,7 @@ in the code domain; they can find reusable and human-interpretable patterns.
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
     
       <tr>
-          <td data-order="{{publication.bibkey}}"><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
+          <td data-order="{{publication.bibkey}}"><a href="{{ site.baseurl }}/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
           <td>{{publication.pattern_type}}</td>
           <td>{{publication.representation}}</td>
           <td>{{publication.application}}</td>

@@ -16,7 +16,7 @@ element properties, like the types of variables, and can predict them.
     {% assign pubDetails = site.publications | where:"bibkey", publication.bibkey %}
     
       <tr>
-          <td data-order="{{publication.bibkey}}"><a href="/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
+          <td data-order="{{publication.bibkey}}"><a href="{{ site.baseurl }}/publications/{{publication.bibkey}}">{{pubDetails[0].authors}}, {{pubDetails[0].year}}.</a> {{pubDetails[0].title}}</td>
           <td>{{publication.input_rep}}</td>
           <td>{{publication.modeled_target}}</td>
           <td>{{publication.intermediate_rep}}</td>
