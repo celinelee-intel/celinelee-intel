@@ -8,12 +8,12 @@ Please consider <a href="/contributing.html">contributing</a> by updating
 the information of existing papers or adding new work.
 
 <table id="allPapers">
-<thead><th>Year</th><th>Title</th><th>Authors</th><th>Venue</th><th>Abstract</th></thead><tbody>
+<thead><th>Year, Venue</th><th>Title</th><th>Authors</th><th>Abstract</th></thead><tbody>
 {% assign publicationsByYear = site.publications | sort: "year" | group_by: "year" %}
 {% for year in publicationsByYear reversed %}
 {% for publication in year.items %}
 <tr>
-	<td>{{ publication.year }}</td>
+	<td>{{ publication.year }}, {{ publication.conference }}</td>
 	<td><a href="{{ publication.url | prepend: site.baseurl }}">{{publication.title}}</a>
 		<span class="externallinks">
 			&nbsp;<a href='http://scholar.google.com/scholar?q={{ publication.title }}' target="_blank"><img  style="display: inline; margin: 0;" src="/public/media/google-scholar.png"/></a>
@@ -22,7 +22,6 @@ the information of existing papers or adding new work.
 		</span>
 	</td>
 	<td>{{ publication.authors }}</td>
-	<td>{{ publication.conference }}</td>
 	<td>{{ publication.content }}</td>
 	<td>{% for tag in publication.tags %}{{ tag }} {% endfor %}</td>
 </tr>
@@ -45,8 +44,8 @@ $(document).ready( function () {
 		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
 		columnDefs: [
 			{
-				targets: [3, 4, 5],
-				visible: true,
+				targets: [5],
+				visible: false,
 				searchable: true
 			}]
 		});
