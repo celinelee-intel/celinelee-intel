@@ -9,7 +9,23 @@
 
     <div id="main" class="content container">
       	<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button> 
+        {{ content }}
     </div>
+
+    <script>
+      /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "18rem";
+        document.getElementById("main").style.marginRight = "18rem";
+      }
+
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginRight = "0";
+      }
+
+    </script>
 
   </body>
 </html>
