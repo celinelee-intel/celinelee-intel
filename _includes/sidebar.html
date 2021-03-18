@@ -8,33 +8,28 @@
   <div class="sidebar-item">
     <p>{{ site.description }}</p>
   </div>
-   
-<!--    
-<div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description }}</p>      
-    </div> 
+  <div class="sidebar-about">
+    <h1>
+      <a href="{{ site.baseurl }}">
+        {{ site.title }}
+      </a>
+    </h1>
+    <p class="lead">{{ site.description }}</p>      
+  </div> 
 
-    <nav class="sidebar-nav">
-      <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
-      <a class="sidebar-nav-item{% if page.url == "/papers.html" %} active{% endif %}" href="{{ site.baseurl }}/papers.html">List of Papers</a>
-      <a class="sidebar-nav-item{% if page.url == "/tags.html" %} active{% endif %}" href="{{ site.baseurl }}/tags.html">Papers by Tag</a>
-      <a class="sidebar-nav-item{% if page.url == "/tsne-viz.html" %} active{% endif %}" href="{{ site.baseurl }}/tsne-viz.html">2D Map of Papers</a>
-   
-      <a class="sidebar-nav-item{% if page.url == "/base-taxonomy/" %} active{% endif %}" href="{{ site.baseurl }}/base-taxonomy/index.md">Core Taxonomy</a>
-   
-   
-     <a class="sidebar-nav-item{% if page.url == "/resources.html" %} active{% endif %}" href="{{ site.baseurl }}/resources.md">Resources, Courses &#38; Events</a>
-     <a class="sidebar-nav-item{% if page.url == "/contributing.html" %} active{% endif %}" href="{{ site.baseurl }}/contributing.markdown">Contributing</a>
-     <a class="sidebar-nav-item{% if page.url == "/contributors.html" %} active{% endif %}" href="{{ site.baseurl }}/contributors.md">Contributors</a>
-     </nav>
+  <nav class="sidebar-nav">
+    <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
+    <a class="sidebar-nav-item{% if page.url == "/papers.html" %} active{% endif %}" href="{{ site.baseurl }}/papers.html">List of Papers</a>
+    <a class="sidebar-nav-item{% if page.url == "/tags.html" %} active{% endif %}" href="{{ site.baseurl }}/tags.html">Papers by Tag</a>
+    <a class="sidebar-nav-item{% if page.url == "/tsne-viz.html" %} active{% endif %}" href="{{ site.baseurl }}/tsne-viz.html">2D Map of Papers</a>
+  
+    <a class="sidebar-nav-item{% if page.url == "/base-taxonomy/" %} active{% endif %}" href="{{ site.baseurl }}/base-taxonomy/index.md">Core Taxonomy</a>
+  
+  
+    <a class="sidebar-nav-item{% if page.url == "/resources.html" %} active{% endif %}" href="{{ site.baseurl }}/resources.md">Resources, Courses &#38; Events</a>
+    <a class="sidebar-nav-item{% if page.url == "/contributing.html" %} active{% endif %}" href="{{ site.baseurl }}/contributing.markdown">Contributing</a>
+    <a class="sidebar-nav-item{% if page.url == "/contributors.html" %} active{% endif %}" href="{{ site.baseurl }}/contributors.md">Contributors</a>
+  </nav>
 
   <div class="sidebar-item">
     <p style="font-size: 12px">Contact <a href="https://miltos.allamanis.com">Miltos Allamanis</a> about this survey or website.
