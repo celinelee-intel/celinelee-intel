@@ -1,4 +1,3 @@
-<a href='{{ site.baseurl }}/contributing.html' class='ribbon'>Contribute to ML4Code</a>
 
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
       styles, `#sidebar-checkbox` for behavior. -->
@@ -12,7 +11,7 @@
    
 <!--    
 <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
@@ -21,7 +20,7 @@
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>      
-    </div> -->
+    </div> 
 
     <nav class="sidebar-nav">
       <div class="sidebar-item"><p style="font-size: 12px">Search related work <input type='text' id='searchTarget' size="16"/> <button onClick="search();">Go</button></p></div>
@@ -58,7 +57,7 @@ function search() {
   try {
     ga('send', 'event', 'search', 'search', $("#searchTarget").val());
   } finally {
-    window.location = "{% link papers.html %}#" + $("#searchTarget").val();
+    window.location = "{{ site.baseurl }}/{% link papers.html %}#" + $("#searchTarget").val();
   }
 }
 </script>

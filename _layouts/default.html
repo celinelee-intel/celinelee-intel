@@ -2,12 +2,10 @@
 <html lang="en-us">
 
   {% include head.html %}
-  <body>
-  <!-- <body class="theme-base-0d layout-reverse"> -->
+  <body class="theme-base-0d layout-reverse">
 
     {% include sidebar.html %}
 
-    <!-- <div id="main" class="content container"> -->
     <div class="wrap">
       <div class="masthead">
         <div class="container">
@@ -18,12 +16,11 @@
           
         </div>
       </div>
+      <div class="container content">
+          {{ content }}
+      </div>
     </div>
 
-    <div class="container content">
-      	<!-- <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>  -->
-        {{ content }}
-    </div>
     
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
@@ -43,18 +40,7 @@
           checkbox.checked = false;
         }, false);
       })(document);
-      // /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-      // function openNav() {
-      //   document.getElementById("mySidebar").style.width = "18rem";
-      //   document.getElementById("main").style.marginRight = "18rem";
-      // }
-
-      // /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-      // function closeNav() {
-      //   document.getElementById("mySidebar").style.width = "0";
-      //   document.getElementById("main").style.marginRight = "0";
-      // }
-
+     
     </script>
 
   </body>

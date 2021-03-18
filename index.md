@@ -2,6 +2,8 @@
 layout: default
 title: A Survey of Machine Programming
 ---
+
+
 ### Machine Programming
 
 < TODO insert writeup intro for machine programming that replaces the next section. >
