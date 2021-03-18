@@ -73,6 +73,8 @@ html {
 /* Sidebar links */
 .sidebar a {
   color: #fff;
+  display: block;
+  transition: 0.3s;
 }
 
 /* About section */
@@ -102,6 +104,19 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
 }
 
 /* Sticky sidebar
