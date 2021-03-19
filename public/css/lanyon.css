@@ -91,6 +91,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+tag {
+  padding: .15rem .3rem;
+  font-size: 70%;
+  color: #000;
+  background-color: #f3f3f3;
+  border-radius: .15rem;
+}
+
+tag > a {
+  color: #fff;
+}
+
 
 /*
  * Masthead
