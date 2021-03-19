@@ -262,12 +262,7 @@ td.rowspanning div
   width:100%;
   overflow-y:scroll;
   overflow-x:auto;
-}
-
-td.rowspanning div ul
-{
-  margin:0 0 0 0;
-  padding:0 0 0 0;
+  text-align: left;
 }
 
 
