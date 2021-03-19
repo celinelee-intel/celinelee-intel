@@ -237,7 +237,7 @@ img {
 /* Tables */
 table {
   margin-bottom: 1rem;
-  width: 100%;
+  width: auto;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
   table-layout: fixed;
@@ -267,7 +267,7 @@ td.rowspanning div
 td.rowspanning div ul
 {
   margin:0 0 0 0;
-  padding:0 0 0 0.25em;
+  padding:0 0 0 0;
 }
 
 
