@@ -23,7 +23,7 @@ the information of existing papers or adding new work.
 		</span>
 	</td>
 	<td>{{ publication.authors }}</td>
-	<td class="rowspanning"><div style="max-height:15em"><ul>{{ publication.content }}</ul></div></td>
+	<td class="rowspanning"><div style="max-height:8em"><ul>{{ publication.content }}</ul></div></td>
 	<td>{% for tag in publication.tags %}{{ tag }} {% endfor %}</td>
 </tr>
 {% endfor %}
