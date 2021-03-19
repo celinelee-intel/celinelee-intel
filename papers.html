@@ -43,7 +43,21 @@ $(document).ready( function () {
     datatable = $('#allPapers').DataTable({
 		paging: false,
 		"order": [[ 0, 'desc' ], [ 1, 'asc' ]],
+		scrollX: true,
+		scrollCollapse: true,
 		columnDefs: [
+			{ 
+				targets: [0,1,2],
+				visible: true,
+				searchable: true,
+				width: '20%'
+			},
+			{
+				targets: [3],
+				visible: true,
+				searchable: true,
+				width: '40%'
+			},
 			{
 				targets: [4],
 				visible: false,
@@ -58,8 +72,8 @@ $(window).on('hashchange', function() {
 });
 
 
-$(window).resize(function () {
-	var width = $
-})
+// $(window).resize(function () {
+// 	var width = $
+// })
 </script>
 
