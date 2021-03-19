@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
  *
  * Center the page content.
  */
+ 
 
 .container {
   max-width: 100%;
@@ -88,6 +89,31 @@ h1, h2, h3, h4, h5, h6 {
   .container {
     /* max-width: 38rem; */
     max-width: 85%;
+  }
+}
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+ .content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 100%;
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 22rem;
+    margin-right: 4rem;
   }
 }
 

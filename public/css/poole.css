@@ -237,10 +237,10 @@ img {
 /* Tables */
 table {
   margin-bottom: 1rem;
-  width: auto;
+  width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
-  table-layout: auto;
+  table-layout: fixed;
 }
 td,
 th {
@@ -249,6 +249,7 @@ th {
   font-size: 14px;
   height: 5rem;
   text-align: center;
+  width: 20%
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
@@ -259,7 +260,7 @@ tbody tr:nth-child(odd) th {
 } */
 td.rowspanning div
 {
-  width:100%;
+  width:40%;
   overflow-y:scroll;
   overflow-x:auto;
   text-align: left;
