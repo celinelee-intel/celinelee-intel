@@ -240,7 +240,7 @@ table {
   width: auto;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
-  table-layout: fixed;
+  table-layout: auto;
 }
 td,
 th {
@@ -263,6 +263,12 @@ td.rowspanning div
   overflow-y:scroll;
   overflow-x:auto;
   text-align: left;
+}
+
+td.rowspanning div ul
+{
+  margin:0 0 0 0;
+  padding:0 0 0 0;
 }
 
 
