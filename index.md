@@ -6,10 +6,10 @@ title: A Survey of Machine Programming
 
 ### Machine Programming
 
-< TODO insert writeup intro for machine programming that replaces the next section. >
+Machine programming (MP) is the field concerned with the automation of all aspects of software development. According to the introductory position paper ["The Three Pillars of Machine Programming"](https://arxiv.org/pdf/1803.07244.pdf) by Gottschlich et al., the field can be reasoned about across three pillars: (i) intention, (ii) invention, and (iii) adaptation. Intention is concerned with capturing user intent, whether by natural language, visual diagram, software code, or other techniques, and interfacing that intent to the machine. Invention explores ways to construct higher-order programs through the composition of existing -- or novel creation of -- algorithms and data structures. Adaptation focuses on transforming higher-order program representations or legacy software programs to achieve certain characteristics, such as performance, security, or correctness, for the desired software and hardware ecosystem.  
 
 
-### Machine Learning on Source Code
+<!-- ### Machine Learning on Source Code
 
 The billions of lines of source code that have been written contain
 implicit knowledge about how to write good code, code that is
@@ -26,7 +26,7 @@ the naturalness of software employs statistical modeling over big code to
 reason about rich variety of programs developers write.  This new line of
 research is inherently interdisciplinary, uniting the machine learning and
 natural language processing communities with software engineering
-and programming language communities.
+and programming language communities. -->
 
 #### Browse Papers by Tag
 {% assign rawtags = Array.new %}
@@ -39,12 +39,9 @@ and programming language communities.
 
 ### About This Site
 
-This site is an experiment: a [living literature review](https://en.wikipedia.org/wiki/Living_review) that allows
-you explore, [search and navigate]({% link papers.html %}) the literature in this area, by
-following a [taxonomy]({% link base-taxonomy/index.md %})
-based on the underlying design principles of each model.
-The full survey is available [as a research paper](https://arxiv.org/abs/1709.06182).
-Please cite as
+This site is derived from the "[living literature review](https://en.wikipedia.org/wiki/Living_review)" on Machine Learning on Source Code. From this site, you can [search and navigate]({% link papers.html %}) the literature in this area, by following a [taxonomy]({% link base-taxonomy/index.md %}) based on the underlying design principles of each model.
+The full survey from which this site is derived is available [as a research paper](https://arxiv.org/abs/1709.06182).
+It can be cited as
 <pre>
 @article{allamanis2018survey,
   title={A survey of machine learning for big code and naturalness},
