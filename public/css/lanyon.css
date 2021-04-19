@@ -163,7 +163,7 @@ tag > a {
   top: 0;
   bottom: 0;
   left: -14rem;
-  width: 14rem;
+  width: 0; /* 14rem; */
   visibility: hidden;
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
